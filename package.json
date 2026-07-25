@@ -1,6 +1,7 @@
 {
   "name": "velvetgeaux-forge",
-  "version": "1.1.2",
+  "version": "1.1.3",
+  "mcpName": "io.github.velvetgeaux/velvet-forge",
   "description": "AI agency tools for Claude Desktop, Cursor, and Windsurf — pitch generation, proposals, market research, and knowledge base search powered by Claude Sonnet 4.",
   "type": "module",
   "bin": {
