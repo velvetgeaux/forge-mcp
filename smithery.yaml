@@ -1,0 +1,31 @@
+name: Velvet Forge
+description: AI agency tools for Claude Desktop, Cursor, and Windsurf. Generate cold outreach sequences, client proposals, market research, social content calendars, and website audits — backed by a live agency knowledge base built by VelvetGeaux (New Orleans).
+license: MIT
+homepage: https://velvetgeaux.com/forge-mcp
+repository: https://www.npmjs.com/package/velvetgeaux-forge
+tags:
+  - agency
+  - marketing
+  - sales
+  - pitch
+  - proposal
+  - content
+  - mcp
+
+configSchema:
+  type: object
+  required:
+    - FORGE_API_KEY
+  properties:
+    FORGE_API_KEY:
+      type: string
+      description: Your Forge API key — starts with fmcp_. Get yours at velvetgeaux.com/forge-mcp
+
+startCommand:
+  type: stdio
+  commandFunction: |-
+    (config) => ({
+      command: "npx",
+      args: ["-y", "velvetgeaux-forge@latest"],
+      env: { FORGE_API_KEY: config.FORGE_API_KEY }
+    })
