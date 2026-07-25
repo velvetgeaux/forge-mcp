@@ -1,0 +1,51 @@
+{
+  "name": "velvetgeaux-forge",
+  "version": "1.1.2",
+  "description": "AI agency tools for Claude Desktop, Cursor, and Windsurf — pitch generation, proposals, market research, and knowledge base search powered by Claude Sonnet 4.",
+  "type": "module",
+  "bin": {
+    "forge-mcp": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "smithery.yaml"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts",
+    "start": "node dist/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "claude-desktop",
+    "cursor",
+    "windsurf",
+    "ai",
+    "agency",
+    "sales",
+    "pitch",
+    "proposal",
+    "marketing",
+    "forge"
+  ],
+  "license": "MIT",
+  "homepage": "https://velvetgeaux.com/forge-mcp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/velvetgeaux/forge-mcp"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.15.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.22.4",
+    "typescript": "^5.9.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
